@@ -1,3 +1,6 @@
+# lazy.nvim
+nvim/.config/nvim/lazy-lock.json
+
 # macOS
 .DS_Store
 __MACOSX/
