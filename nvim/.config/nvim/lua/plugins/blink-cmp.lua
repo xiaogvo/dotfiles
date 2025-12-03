@@ -27,17 +27,15 @@ return {
     -- See :h blink-cmp-config-keymap for defining your own keymap
     keymap = { 
       
-      preset = 'enter',
+      preset = 'none',
       
       ['<Esc>'] = { 'hide', 'fallback' },
 
-      ['<Tab>'] = { 'snippet_forward', 'fallback' },
-        
-      ['<S-Tab>'] = { 'snippet_backward', 'fallback' },
+      ['<CR>'] = { 'accept', 'fallback' },
 
-      ['<S-k>'] = { 'select_prev', 'fallback_to_mappings' },
-      
-      ['<S-j>'] = { 'select_next', 'fallback_to_mappings' },
+      ['<Tab>'] = { 'select_next', 'snippet_forward', 'fallback' },
+  
+      ['<S-Tab>'] = { 'select_prev', 'snippet_backward', 'fallback' },
 
     },
 
@@ -50,14 +48,14 @@ return {
     -- (Default) Only show the documentation popup when manually triggered
     completion = { 
 
-      -- keyword = { range = 'full' },
+      keyword = { range = 'full' },
 
       accept = { auto_brackets = { enabled = false }, },
 
       menu = {
       
-	    -- Don't automatically show the completion menu
-	    auto_show = true,
+	      -- Don't automatically show the completion menu
+	      auto_show = true,
 
       	-- nvim-cmp style menu
       	draw = {
@@ -65,12 +63,13 @@ return {
             { "label", "label_description", gap = 1 },
             { "kind_icon", "kind" }
           },
+          treesitter = { 'lsp' }
         }
       },
      
       documentation = { auto_show = true },
 
-      ghost_text = { enabled = true }
+      -- ghost_text = { enabled = true }
     },
 
     -- Default list of enabled providers defined so that you can extend it

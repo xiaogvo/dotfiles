@@ -7,3 +7,7 @@ for _, file in ipairs(vim.fn.readdir(lsp_path)) do
   end
 end
 
+vim.diagnostic.config({
+  virtual_text = true,
+})
+

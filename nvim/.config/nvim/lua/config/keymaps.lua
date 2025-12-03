@@ -4,9 +4,9 @@ local opts = { noremap = true, silent = true }
 -----------------------------------------------------
 -- 基础移动 / 编辑
 -----------------------------------------------------
-map("i", "jk", "<Esc>", opts)     -- jk 退出插入模式
-map("n", "<leader>w", "<cmd>w<CR>", opts)
-map("n", "<leader>q", "<cmd>q<CR>", opts)
+-- map("i", "jk", "<Esc>", opts)     -- jk 退出插入模式
+-- map("n", "<leader>w", "<cmd>w<CR>", opts)
+-- map("n", "<leader>q", "<cmd>q<CR>", opts)
 
 -----------------------------------------------------
 -- 分屏窗口
@@ -48,10 +48,10 @@ map("n", "<leader>q", "<cmd>q<CR>", opts)
 -----------------------------------------------------
 -- LSP 常用键位
 -----------------------------------------------------
-map("n", "gd", vim.lsp.buf.definition, opts)
-map("n", "gD", vim.lsp.buf.declaration, opts)
-map("n", "gi", vim.lsp.buf.implementation, opts)
-map("n", "gr", vim.lsp.buf.references, opts)
+-- map("n", "gd", vim.lsp.buf.definition, opts)
+-- map("n", "gD", vim.lsp.buf.declaration, opts)
+-- map("n", "gi", vim.lsp.buf.implementation, opts)
+-- map("n", "gr", vim.lsp.buf.references, opts)
 -- map("n", "K",  vim.lsp.buf.hover, opts)
 -- map("n", "<leader>rn", vim.lsp.buf.rename, opts)
 -- map("n", "<leader>ca", vim.lsp.buf.code_action, opts)
@@ -62,16 +62,16 @@ map("n", "gr", vim.lsp.buf.references, opts)
 -----------------------------------------------------
 -- Diagnostic
 -----------------------------------------------------
-map("n", "gl", vim.diagnostic.open_float, opts)
-map("n", "[d", vim.diagnostic.goto_prev, opts)
-map("n", "]d", vim.diagnostic.goto_next, opts)
+-- map("n", "gl", vim.diagnostic.open_float, opts)
+-- map("n", "[d", vim.diagnostic.goto_prev, opts)
+-- map("n", "]d", vim.diagnostic.goto_next, opts)
 -- map("n", "<leader>dl", ":Telescope diagnostics<CR>", opts)
 
 -----------------------------------------------------
 -- 快速插入模式下移动（可选）
 -----------------------------------------------------
-map("i", "<C-h>", "<Left>", opts)
-map("i", "<C-l>", "<Right>", opts)
-map("i", "<C-j>", "<Down>", opts)
-map("i", "<C-k>", "<Up>", opts)
+-- map("i", "<C-h>", "<Left>", opts)
+-- map("i", "<C-l>", "<Right>", opts)
+-- map("i", "<C-j>", "<Down>", opts)
+-- map("i", "<C-k>", "<Up>", opts)
 
