@@ -4,7 +4,7 @@ local opts = { noremap = true, silent = true }
 -----------------------------------------------------
 -- 基础移动 / 编辑
 -----------------------------------------------------
--- map("i", "jk", "<Esc>", opts)     -- jk 退出插入模式
+map("i", "jk", "<Esc>", opts)     -- jk 退出插入模式
 -- map("n", "<leader>w", "<cmd>w<CR>", opts)
 -- map("n", "<leader>q", "<cmd>q<CR>", opts)
 
@@ -25,8 +25,8 @@ local opts = { noremap = true, silent = true }
 -----------------------------------------------------
 -- Buffer / Tab
 -----------------------------------------------------
--- map("n", "<S-l>", ":bnext<CR>", opts)
--- map("n", "<S-h>", ":bprevious<CR>", opts)
+map("n", "<C-l>", "<cmd>bnext<CR>", opts)
+map("n", "<C-h>", "<cmd>bprevious<CR>", opts)
 -- map("n", "<leader>bd", ":bdelete<CR>", opts)
 -- map("n", "<leader>tn", ":tabnew<CR>", opts)
 -- map("n", "<leader>to", ":tabo<CR>", opts)
@@ -70,8 +70,8 @@ local opts = { noremap = true, silent = true }
 -----------------------------------------------------
 -- 快速插入模式下移动（可选）
 -----------------------------------------------------
--- map("i", "<C-h>", "<Left>", opts)
--- map("i", "<C-l>", "<Right>", opts)
--- map("i", "<C-j>", "<Down>", opts)
--- map("i", "<C-k>", "<Up>", opts)
+map("i", "<C-h>", "<Left>", opts)
+map("i", "<C-l>", "<Right>", opts)
+map("i", "<C-j>", "<Down>", opts)
+map("i", "<C-k>", "<Up>", opts)
 

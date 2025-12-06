@@ -6,7 +6,7 @@ return {
     open_mapping = [[<c-\>]], 
     direction = 'horizontal',
 	  insert_mappings = true,
-    size = 20,
+    size = 15,
   },
   config = function(_, opts)
     require("toggleterm").setup(opts)
