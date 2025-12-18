@@ -29,9 +29,13 @@ return {
       
       preset = 'none',
       
-      ['<Esc>'] = { 'hide', 'fallback' },
+      ['<C-e>'] = { 'hide', 'fallback' },
 
       ['<CR>'] = { 'accept', 'fallback' },
+
+      ['<Up>'] = { 'select_prev', 'fallback' },
+
+      ['<Down>'] = { 'select_next', 'fallback' },
 
       ['<Tab>'] = { 'select_next', 'snippet_forward', 'fallback' },
   
@@ -54,8 +58,8 @@ return {
 
       menu = {
       
-	      -- Don't automatically show the completion menu
-	      auto_show = true,
+	    -- Don't automatically show the completion menu
+	    auto_show = true,
 
       	-- nvim-cmp style menu
       	draw = {
@@ -68,6 +72,8 @@ return {
       },
      
       documentation = { auto_show = true },
+
+      list = { selection = { preselect = false, } }
 
       -- ghost_text = { enabled = true }
     },
@@ -88,7 +94,9 @@ return {
   opts_extend = { "sources.default" },
   cmdline = {
     keymap = { preset = 'inherit' },
-    completion = { menu = { auto_show = true }
+    completion = { 
+      menu = { auto_show = true },
+      list = { selection = { preselect = false, } }
+    },
   },
-},
 }

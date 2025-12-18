@@ -48,8 +48,8 @@ map("n", "<C-h>", "<cmd>bprevious<CR>", opts)
 -----------------------------------------------------
 -- LSP 常用键位
 -----------------------------------------------------
--- map("n", "gd", vim.lsp.buf.definition, opts)
--- map("n", "gD", vim.lsp.buf.declaration, opts)
+map("n", "gd", vim.lsp.buf.definition, opts)
+map("n", "gD", vim.lsp.buf.declaration, opts)
 -- map("n", "gi", vim.lsp.buf.implementation, opts)
 -- map("n", "gr", vim.lsp.buf.references, opts)
 -- map("n", "K",  vim.lsp.buf.hover, opts)
