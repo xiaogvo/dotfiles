@@ -10,6 +10,6 @@ vim.opt.tabstop = 4 -- Number of spaces tabs count for
 vim.opt.shell = "zsh"
 
 vim.opt.termguicolors = true -- True color support
-vim.opt.bg = "dark"
-vim.cmd.colorscheme('everforest')
+vim.opt.bg = "light"
+vim.cmd.colorscheme('bluloco')
 
