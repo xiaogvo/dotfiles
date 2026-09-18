@@ -11,5 +11,5 @@ vim.opt.shell = "zsh"
 
 vim.opt.termguicolors = true -- True color support
 vim.opt.bg = "light"
-vim.cmd.colorscheme('bluloco')
+vim.cmd.colorscheme('monokai-pro-sun')
 
