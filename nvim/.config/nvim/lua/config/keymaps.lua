@@ -4,7 +4,7 @@ local opts = { noremap = true, silent = true }
 -----------------------------------------------------
 -- 基础移动 / 编辑
 -----------------------------------------------------
-map("i", "jk", "<Esc>", opts)     -- jk 退出插入模式
+-- map("i", "jk", "<Esc>", opts)     -- jk 退出插入模式
 -- map("n", "<leader>w", "<cmd>w<CR>", opts)
 -- map("n", "<leader>q", "<cmd>q<CR>", opts)
 

@@ -73,7 +73,7 @@ return {
      
       documentation = { auto_show = true },
 
-      list = { selection = { preselect = false, } }
+      list = { selection = { preselect = true, } }
 
       -- ghost_text = { enabled = true }
     },
